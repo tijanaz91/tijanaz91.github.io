@@ -1,0 +1,754 @@
+body{
+  background-color: rgb(235,235,235);
+  font-family: sans-serif;
+margin: 0;
+padding: 0;
+}
+/*HeaderDesktop*/
+header .menu1{
+    display: none;
+}
+header{
+    width: 100%;
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+header .logo {
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+}
+header .logo img{
+    width: 100%;
+    height: auto;
+}
+header .menu {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+header .menu ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+header .menu li{
+    width: 15%;
+    list-style-type: none;
+    height: 100px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+header .menu li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+header .menu li:hover{
+    background-color: blue;
+    color: white;
+}
+header .menu li > a:hover{
+    background-color: blue;
+    color: white;
+}
+
+header .startProject {
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+header .startProject button{
+    background-color: red;
+    font-size: 15px;
+    color: white;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+}
+header .startProject button:hover{
+    background-color: blue;
+}
+header .social {
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+@media (max-width: 1600px) {
+  header .menu li a{
+      font-size: 17px;
+  }
+  header .startProject button{
+      font-size: 12px;
+  }
+}
+
+
+/*HeaderTablet*/
+@media (max-width: 1200px) {
+    header .menu1{
+      display: none;
+    }
+    header .logo{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+        display: none;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    header .menu{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    header .menu ul{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    header .menu ul li{
+        list-style-type: none;
+        text-align: center;
+        width:12%;
+        padding-left: 5px;
+        padding-right: 5px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    header .menu ul li a{
+        color: black;
+        text-decoration: none;
+        font-size: 13px;
+    }
+    .header .menu ul li:hover{
+        background-color: blue;
+    }
+    header .startProject{
+        width: 100%;
+    }
+    header .startProject{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    header .startProject button{
+        padding:0;
+        color: white;
+        font-size: 12px;
+        background-color: red;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-right: 5px;
+        padding-left: 5px;
+        border: none;
+        cursor: pointer;
+        height: 35px;
+        align-items: center;
+    }
+    .header .startProject button:hover{
+        background-color: blue;
+    }
+    .header .social{
+        padding: 0;
+        margin: 0;
+        width: 20%;
+    }
+    header .social {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    header .social img{
+        padding-top:10px;
+    }
+
+}
+
+/*HeaderMobile*/
+@media (max-width: 600px) {
+    header .menu{
+        display: none;
+    }
+    header .startProject{
+        display: none;
+    }
+    header .social{
+        display: none;
+    }
+    header .logo{
+        width: 100%;
+    }
+    header .menu1 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding-left: 30px;
+    }
+    header{
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+        display: none;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    header .menu{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    header .menu ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    header .menu ul li{
+        list-style-type: none;
+        text-align: center;
+        width:100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    header .menu ul li a{
+        color: black;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    .header .menu ul li:hover{
+        background-color: blue;
+    }
+    header .startProject{
+        width: 100%;
+    }
+    header .startProject{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    header .startProject button{
+        padding:0;
+        color: white;
+        font-size: 12px;
+        background-color: red;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-right: 5px;
+        padding-left: 5px;
+        border: none;
+        cursor: pointer;
+        height: 35px;
+        align-items: center;
+    }
+    .header .startProject button:hover{
+        background-color: blue;
+    }
+    .header .social{
+        padding: 0;
+        margin: 0;
+        width: 20%;
+    }
+    header .social {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    header .social img{
+        padding-top:10px;
+    }
+
+}
+
+/*Slajder*/
+.slider{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.slider .mySlides {
+  color: white;
+  text-align: center;
+  padding: 75px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider .mySlides h1{
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.slider .mySlides button{
+   cursor: pointer;
+   color: white;
+   padding: 15px;
+   background-color: rgba(0,0,0,0.5);
+   border: 1px solid white;
+}
+.slider .mySlides button:hover {
+  background-color: red;
+}
+
+@media (max-width: 1200px){
+
+    .slider .mySlides h1{
+        font-size: 40px;
+    }
+}
+@media (max-width: 600px){
+
+    .slider .mySlides h1{
+        padding-top: 30px;
+        font-size: 20px;
+    }
+    .slider .mySlides p{
+        font-size: 12px;
+    }
+}
+
+/* Content */
+.content{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 0;
+    background-color: white;
+    margin-top: -50px;
+    text-align: center;
+}
+
+.content div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.content .buttons button{
+  text-align: center;
+  font-size: 23px;
+  color: blue;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  width: 33.33%;
+  height: 100px;
+}
+
+.content .buttons button:hover   {
+color: black;
+text-decoration: underline;
+background-color: rgb(235,235,235);
+}
+
+.content p{
+  text-align: center;
+  font-style: italic;
+  font-size:21px;
+}
+
+hr{
+  margin-top: 30px;
+  width: 80%;
+  align-items: center;
+}
+
+@media (max-width: 1600px){
+    .content .buttons button{
+        font-size: 21px;
+    }
+    .content {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        padding: 0;
+        background-color: white;
+        margin-top: -50px;
+    }
+}
+
+@media (max-width: 1200px){
+    .content .buttons button{
+        font-size: 20px;
+    }
+    .content {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 0;
+        background-color: white;
+        margin-top: -50px;
+    }
+}
+@media (max-width: 600px){
+.content .buttons button{
+        font-size: 10px;
+    }
+}
+
+.block div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.block div .blockItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.block div .blockItem h3{
+    color: black;
+}
+.block div .blockItem .block1{
+  width: 70%;
+  height: 150px;
+  background-color: grey;
+}
+.block div .blockItem button{
+    color: red;
+    background-color: white;
+    border: 3px solid #F3F3F3;
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.block div .blockItem button:hover{
+    background-color: red;
+    color: white;
+}
+.block div .blockItem p{
+    font-size: 17px;
+    margin-right: 80px;
+    margin-left: 80px;
+    text-align: center;
+}
+
+.imgBtn {
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.imgBtn button{
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  border: none;
+  padding: 10px;
+}
+.imgBtn button:hover{
+  background-color: blue;
+}
+
+
+/*Footer*/
+.footer{
+    width: 100%;
+    background-color: grey;
+    margin: 0;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.footer div{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+}
+.footer div .footerItem{
+    padding: 0;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.footer div .footerItem:nth-child(1){
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.footer div .footerItem:nth-child(2){
+    width: 20%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.footer div .footerItem:nth-child(3){
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.footer div .footerItem:nth-child(3) a{
+  /*  color: white; */
+    text-decoration: none;
+}
+.footer div .footerItem:nth-child(3) a:hover{
+    color: red;
+}
+
+.footer div .footerItem:nth-child(4){
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 0;
+}
+
+.footer div .footerItem:nth-child(4) input{
+    background-color: rgb(200,200,200);
+    border: none;
+    padding: 10px;
+    width: 70%;
+}
+.footer div .footerItem:nth-child(4) button{
+    background-color: rgb(100,100,100);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 10px;
+}
+.footer div .footerItem:nth-child(4) button:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+.footer div .footerItem:nth-child(4) div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.footer div .footerItem p{
+    color: white;
+    font-size: 14px;
+}
+.footer div .footerItem a{
+    text-decoration: none;
+}
+.footer div .footerItem a:hover span{
+    color: red;
+}
+.footer div .footerItem li{
+    color: red;
+}
+.footer div .footerItem li span{
+    color: white;
+}
+.footer div .footerItem p span{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+@media (max-width: 1600px){
+    .block div .blockItem p{
+        margin-right: 50px;
+        margin-left: 50px;
+        text-align: center;
+    }
+
+    .footer div{
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 1200px){
+
+    .block{
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+        padding-top: 50px;
+    }
+    .block1{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 30px;
+
+    }
+    .block div .blockItem .block1{
+        width: 150px;
+        height: 100px;
+    }
+
+    .footer div{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px){
+    .content {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        height: auto;
+
+    }
+    .content div{
+       height: auto;
+    }
+
+    .block {
+        width: 100%;
+        margin: 0;
+        padding-top: 20px;
+    }
+    .block div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .block div .blockItem .block1 {
+        width: 60%;
+        height: 70px;
+    }
+
+    .imgBtn{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footer{
+        margin-top: 50px;
+    }
+    .footer div{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .footer div .footerItem:nth-child(1){
+        width: 40%;
+    }
+    .footer div .footerItem:nth-child(2){
+        width: 40%;
+    }
+    .footer div .footerItem:nth-child(3){
+        width: 80%;
+    }
+    .footer div .footerItem:nth-child(3) ul{
+        padding-left: 15px;
+        margin-left: 0;
+    }
+    .footer div .footerItem:nth-child(4){
+        width: 80%;
+    }
+    .footer div .footerItem:nth-child(4) div{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .footer div .footerItem:nth-child(4) div input{
+        width: 60%;
+        font-size: 12px;
+        padding: 10px;
+    }
+    .footer div .footerItem:nth-child(4) div button{
+        width: 30%;
+        padding: 10px;
+        font-size: 12px;
+        margin-top: 0;
+    }
+}

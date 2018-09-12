@@ -1,0 +1,211 @@
+<html>
+<head>
+  <title>Zadatak</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<header>
+  <div class="logo"><a href="zadatak.html"><img src="images/global.jpg"></a></div>
+
+  <div class="menu1">
+             <a  href="#"><img id="menu1" onclick="fja()" src="images/menu.png"  /></a>
+  </div>
+
+  <div class="menu" id="menu">
+       <ul>
+         <li><a href="#">Product</a></li>
+         <li><a href="#">About us</a></li>
+         <li><a href="#">Expertise</a></li>
+         <li><a href="#">Case Studis</a></li>
+         <li><a href="#">Clients</a></li>
+         <li><a href="#">News</a></li>
+         <li><a href="#">Contact Us</a></li>
+       </ul>
+   </div>
+
+   <div class="startProject" id="startProject">
+              <button>START YOUR PROJECT WITH US</button>
+   </div>
+
+   <div class="social" id="social">
+            <a href="#"><img src="images/facebook.png"></a>
+            <a href="#"><img src="images/twitter.png"></a>
+            <a href="#"><img src="images/linkedin.png"></a>
+      </div>
+
+</header>
+
+<div class="slider" id="slider">
+    <div class="mySlides" id="slide1" style="background-image:url(images/image1.jpg)">
+        <h1>TRUCKS</h1>
+        <p> Our experience, tehnical expertise and attention to detail on each specific project ensures <br>
+          every project is tailor-made to meet each clients specific requirements.</p> <br>
+        <button>LEARN MORE</button>
+        <br><br>
+    </div>
+    <div class="mySlides" id="slide2" style="background-image:url(images/image2.jpg)">
+      <h1>WIND TURBINES</h1>
+      <p> Our experience, tehnical expertise and attention to detail on each specific project ensures <br>
+          every project is tailor-made to meet each clients specific requirements.</p> <br>
+      <button>LEARN MORE</button>
+      <br><br>
+    </div>
+    <div class="mySlides" id="slide3" style="background-image:url(images/image3.jpg)">
+      <h1>STEEL FABRICATION</h1>
+      <p> Our experience, tehnical expertise and attention to detail on each specific project ensures <br>
+          every project is tailor-made to meet each clients specific requirements.</p> <br>
+      <button>LEARN MORE</button>
+      <br><br>
+    </div>
+</div>
+
+
+<div class="content">
+  <div>
+    <div class="buttons">
+      <button class="btnSlide1" onclick="currentDiv(1)">
+        TRUCKS
+      </button>
+      <button class="btnSlide2" onclick="currentDiv(2)">
+        WIND TURBINES
+      </button>
+      <button class="btnSlide3" onclick="currentDiv(3)">
+        STEEL FABRICATION
+      </button>
+    </div>
+  </div>
+
+<p>With over 25 years'experience, Global V-Tech are one of the UK's <br>
+  specialists in the design of exhibition vehicles and trailers. </p>
+
+<hr><img src="images/o.jpg" style="margin-top:-32px" >
+
+<div class="block">
+    <div>
+        <div class="blockItem">
+            <h3>ABOUT US</h3>
+            <div class="block1"></div>
+            <p>From start to finish, all aspects of every project are carried out by our in-house resources,
+               meaning we have tight control throughout... </p>
+            <button>Find out more</button>
+        </div>
+        <div class="blockItem">
+            <h3>EXPERTISE</h3>
+              <div class="block1"></div>
+              <p>From start to finish, all aspects of every project are carried out by our in-house resources,
+                 meaning we have tight control throughout... </p>
+            <button>Find out more</button>
+        </div>
+        <div class="blockItem">
+            <h3>CASE STUDIES</h3>
+            <div class="block1"></div>
+            <p>From start to finish, all aspects of every project are carried out by our in-house resources,
+               meaning we have tight control throughout... </p>
+            <button>Find out more</button>
+        </div>
+    </div>
+</div>
+
+<div class="imgBtn" style="background-image:url(images/image.jpg)">
+    <button>START YOUR PROJECT WITH US</button>
+</div>
+</div>
+
+
+<div class="footer">
+    <div>
+        <div class="footerItem">
+            <p><span>Global V-Tech Ltd</span><br>
+            316 Padholme Road<br>
+            Eastern Industry<br>
+            Peterborough PE1 5XL<br>
+            </p>
+            <img src="images/global3.jpg">
+        </div>
+        <div class="footerItem">
+            <p>01733 567343<br>
+               01733 896633<br>
+               info@globallvtech.co.uk<br></p>
+        </div>
+        <div class="footerItem">
+         <ul>
+             <a href="#"><li><span>Products</span></li></a>
+             <a href="#"><li><span>About Us</span></li></a>
+             <a href="#"><li><span>Expertise</span></li></a>
+             <a href="#"><li><span>Case Studies</span></li></a>
+             <a href="#"><li><span>Clients</span></li></a>
+             <a href="#"><li><span>News</span></li></a>
+             <a href="#"><li><span>Contact Us</span></li></a>
+         </ul>
+        </div>
+        <div class="footerItem">
+            <p><span>Newsletter</span><br>
+            Subscribe to our newsletter and get all important information and updates on time.
+            </p>
+            <div>
+            <input type="text" placeholder="Your email adress"><button>SUBSCRIBE</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
+
+<script>
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-red";
+}
+
+</script>
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+
+<script>
+function fja() {
+  document.getElementById('menu1').style.display="none";
+  document.getElementById('menu').style.display="block";
+}
+</script>
