@@ -1,0 +1,387 @@
+body{
+  background-image: url(../images/background.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+a:link{
+  text-decoration: none;
+}
+header{
+ width: 54%;
+ margin-left: 23%;
+ margin-right: 23%;
+ font-family: 'Montserrat', sans-serif;
+ font-weight: bold;
+
+}
+.logo{
+  width: 15%;
+}
+.logo img{
+   width: 100%;
+}
+.topMenu ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 36%;
+  height: 65px;
+  font-size: 11px;
+  margin-left: 64%;
+  margin-top: -65px;
+  padding-bottom: 30px;
+  color: rgb(128,118,118);
+}
+.topMenu a{
+  text-decoration: none;
+  color: rgb(128,118,118);
+}
+.topMenu ul li{
+  text-align: center;
+  padding: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.topMenu ul li:hover{
+  color: rgb(248,73,112);
+  background-color: rgb(242,224,228);
+}
+.topMenu ul li a:hover{
+  color: rgb(248,73,112);
+  background-color: rgb(242,224,228);
+}
+.mainMenu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 85%;
+  font-size: 12px;
+  margin-left: 15%;
+  margin-top: -35px;
+  color: rgb(34,0,8);
+  border: solid 1px rgb(218,215,215);
+  border-bottom: none;
+  background-color: white;
+  padding-left: 0;
+}
+.mainMenu ul li{
+  padding: 0;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.mainMenu a{
+  text-decoration: none;
+  color: rgb(34,0,8);
+}
+.mainMenu ul li:hover{
+  color: white;
+  background-color: rgb(248,73,112);
+}
+.mainMenu a:hover{
+  color: white;
+}
+.mainMenu ul li{
+  width: 100%;
+  text-align: center;
+}
+
+.content{
+  width: 54%;
+  margin-left: 23%;
+  margin-right: 23%;
+  height: auto;
+  margin-top: -10px;
+  float: left;
+  border-top: solid 1px rgb(218,215,215);
+  border-left: solid 1px rgb(218,215,215);
+  margin-bottom: 35px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container1{
+  width: 100%;
+}
+.row1{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content:flex-start;
+}
+
+.bigBox {
+  width: 50%;
+  background-color: rgb(247,247,247);
+  padding: 10px;
+  border-bottom: solid 1px rgb(218,215,215);
+  border-right: solid 1px rgb(218,215,215);
+}
+.bigBox:hover{
+  top: -10px;
+  left: -10px;
+  box-shadow: 10px 10px rgb(248,73,112);
+  border-bottom: none;
+  border-right: none;
+  border-left: solid 1px rgb(218,215,215);
+  border-top: solid 1px rgb(218,215,215);
+}
+.bigBox .nadNaslov {
+  color: rgb(248,73,112);
+  font-size: 14px;
+  padding-top: 10px;
+  font-weight: 600;
+}
+.bigBox .naslov {
+  color: rgb(34,0,8);
+  font-size: 20px;
+  padding-top: 5px;
+  font-family: 'Playfair Display', serif;
+}
+.bigBox .text {
+  color: rgb(146,144,144);
+  font-size: 14px;
+  padding-top: 5px;
+}
+.bigBox .link {
+  color: rgb(189,179,182);
+  font-size: 12px;
+  padding-top: 5px;
+  font-weight: 600;
+}
+.bigBox img{
+  width: 100%;
+}
+.smallBox {
+  width: 50%;
+  background-color: rgb(247,247,247);
+  padding: 5px;
+  border-bottom: solid 1px rgb(218,215,215);
+  border-right: solid 1px rgb(218,215,215);
+}
+.smallBox:hover{
+  top: -10px;
+  left: -10px;
+  box-shadow: 10px 10px rgb(248,73,112);
+  border-bottom: none;
+  border-right: none;
+  border-left: solid 1px rgb(218,215,215);
+  border-top: solid 1px rgb(218,215,215);
+
+}
+
+.smallBox .nadNaslov {
+  color: rgb(248,73,112);
+  font-size: 12px;
+  padding-top: 10px;
+  font-weight: 600;
+}
+.smallBox .naslov {
+  color: rgb(34,0,8);
+  font-size: 18px;
+  padding-top: 3px;
+  font-family: 'Playfair Display', serif;
+}
+.smallBox .text {
+  color: rgb(146,144,144);
+  font-size: 14px;
+  padding-right: 0;
+  padding-top: 3px;
+
+}
+.smallBox .link {
+  color: rgb(189,179,182);
+  font-size: 12px;
+  padding-top: 3px;
+  font-weight: 600;
+}
+.smallBox img {
+  width: 50%;
+  padding: 10px;
+}
+
+footer{
+  color: rgb(146,144,144);
+  text-align: center;
+  padding: 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+}
+
+#menu{
+  display: none;
+}
+@media (max-width:1370px){
+  .mainMenu ul{
+    font-size: 10px;
+  }
+  .bigBox .nadNaslov {
+    font-size: 12px;
+  }
+  .bigBox .naslov {
+    font-size: 18px;
+  }
+  .bigBox .text {
+    font-size: 12px;
+  }
+  .bigBox .link {
+    font-size: 12px;
+  }
+  .smallBox .nadNaslov {
+    font-size: 11px;
+  }
+  .smallBox .naslov {
+    font-size: 15px;
+  }
+  .smallBox .text {
+    font-size: 11px;
+  }
+  .smallBox .link {
+    font-size: 11px;
+  }
+}
+@media (max-width:1320px) {
+  .mainMenu ul {
+    width: 100%;
+    font-size: 9px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .mainMenu ul li{
+    padding: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .topMenu ul{
+    height: 30px;
+    font-size: 9px;
+    margin-left: 64%;
+    margin-top: -35px;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width:1200px){
+  header{
+     width: 70%;
+     margin-left: 15%;
+     margin-right: 15%;
+  }
+  .content{
+     width: 70%;
+     margin-left: 15%;
+     margin-right: 15%;
+  }
+
+
+}
+@media (max-width:768px) {
+  header{
+     width: 100%;
+     margin: 0;
+  }
+  .logo{
+    width: 100%;
+  }
+  .logo img{
+    width: 30%;
+  }
+  #mainMenu{
+    display: none;
+  }
+  #menu{
+    display: block;
+    text-align: right;
+    margin-top: -25px;
+    padding: 10px;
+  }
+  #menu img{
+    width: 50px;
+  }
+  .mainMenu ul {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -10px;
+  }
+  .mainMenu ul li{
+    width: 100%;
+    font-size: 22px;
+  }
+  .mainMenu ul a {
+    width: 100%;
+    text-align: center;
+  }
+  .topMenu ul{
+    width: 54%;
+    font-size: 7px;
+    margin-left: 46%;
+    margin-top: 0;
+    padding-bottom: 10px;
+    padding-right: 5px;
+  }
+  .topMenu a{
+    font-size: 18px;
+  }
+  .topMenu ul li{
+    text-align: center;
+    padding: 3px;
+  }
+  .content{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .row1{
+    flex-wrap: wrap;
+  }
+ .bigBox{
+   width: 100%;
+ }
+
+ .bigBox .nadNaslov {
+   font-size: 18px;
+ }
+ .bigBox .naslov {
+   font-size: 22px;
+ }
+ .bigBox .text {
+   font-size: 16px;
+ }
+ .bigBox .link {
+   font-size: 16px;
+ }
+
+ .smallBox{
+   width: 100%;
+ }
+ .smallBox .nadNaslov {
+   font-size: 18px;
+ }
+ .smallBox .naslov {
+   font-size: 22px;
+ }
+ .smallBox .text {
+   font-size: 16px;
+ }
+ .smallBox .link {
+   font-size: 16px;
+ }
+ .tekstSmallBox{
+   width: 100%;
+ }
+ .smallBox img {
+   width: 100%;
+ }
+
+footer {
+  font-size: 14px;
+}
+
+}
