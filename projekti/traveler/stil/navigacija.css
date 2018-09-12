@@ -1,0 +1,101 @@
+.menu{
+    margin:0;
+    padding: 7px 6px 0;
+    line-height: 100%;/* visina linije teksta/reda */
+    border-radius: 10px;
+    float: left;
+    width: 79%;
+    margin-right: 10%;
+    background-color: rgba(0, 0, 224, 0.7);
+    margin-left: 10%;
+}
+.menu li{ /*stavke glavnog menija */
+    margin: 0 5px;/* gore-dole desno-levo */
+    padding: 0 0 8px;/* gore desno/levo dole */
+    float: left;
+    position: relative;/* pozicioniranje elemenenata u odnosu na normalan polozaj */
+    list-style-type: none;
+}
+/*linkovi glavnog menija */
+.menu a{
+    color:white;
+    text-decoration: none;
+    display: block; /*prikazuje element sa prelemom reda pre i posle tog elementa koji je element bloka */
+    padding: 8px 20px;
+    border-radius: 1.6em;
+    text-shadow: 1px 1px 10px black;
+    font-variant:small-caps;
+}
+.menu li:hover a{
+    color:white;
+    box-shadow: 0 1px 1px black;
+    font-weight: bold;/* debljina fonta */
+    text-shadow: 0 4px 3px rgba(0, 0, 0, .6);
+}
+.menu1{
+    margin:-120px;
+    line-height: 100%;/* visina linije teksta/reda */
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.menu1 li{ /*stavke glavnog menija */
+    margin: 0 45%;/* gore-dole desno-levo */
+    float: left;
+    position: relative;/* pozicioniranje elemenenata u odnosu na normalan polozaj */
+    list-style-type: none;
+}
+/*linkovi glavnog menija */
+.menu1 a{
+    color:darkorange;
+    text-decoration:underline;
+
+}
+.menu1 li:hover a{
+    color:white;
+    box-shadow: 0 1px 1px black;
+    text-shadow: 0 4px 3px rgba(0, 0, 0, .6);
+}
+/*podliste iznad kojih prelazimo misem */
+.menu ul li:hover a,.menu li:hover li a{
+    background: none;
+    border: none;
+    color: darkorange;
+    box-shadow: none;
+    padding: 0.3em 0.8em;
+}
+/*linkovi podliste iznad kojih prelazimo misem */
+.menu ul a:hover{
+    color: white!important;
+    text-decoration: none;;
+    font-weight: bold;
+    border-radius: 0 1px 3px #F2A06D;
+    text-shadow: 0 4px 3px rgba(0, 0, 0, .6);
+}
+/*liste drugog nivoa */
+.menu ul{
+    background-color: rgba(0, 0, 224, 0.7);
+    display: none; /*nevidljiv tekst */
+    margin: 0;
+    padding: 0;
+    width: 185px;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    border: solid 1px darkorange;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+}
+.menu li:hover > ul {/* za ul koji je dete li-a */
+    display: block;
+}
+.menu ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+/* linkovi podliste */
+.menu ul a {
+    font-weight: normal;
+}

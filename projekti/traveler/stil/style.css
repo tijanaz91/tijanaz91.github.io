@@ -1,0 +1,360 @@
+*{
+    font-family: Georgia;
+}
+body{
+    background-color: #ADFF2F;
+}
+
+.kontejner{
+    margin:0 auto;
+    width: 100%;
+}
+
+.header {
+    width:80%;
+    height: 110px;
+    margin-left: 10%;
+    border-radius: 10px;
+    background-color: orangered;
+    float: left;
+}
+
+a{
+    text-decoration: none;
+}
+
+#sadrzaaaj{
+
+  width: 56%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 10%;
+  background-color: white;
+  position: relative;;
+  border-radius: 5px;
+  padding: 30px;
+  float: left;
+
+}
+
+#sadrzaj2 p{
+    color: black;
+}
+
+.saznaj{
+    color: darkorange;
+    margin-left: 1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#sadrzaj2 h5{
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
+
+#sadrzaj22 p{
+    color: black;
+}
+#sadrzaj222 p{
+    color: black;
+}
+#sadrzaj22 h5{
+    background-color: darkorange;
+    color: white;
+    text-align: center;
+}
+#sadrzaj222 h5{
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+
+h2{
+    font-size: 2.5em;
+    color: darkorange;
+    text-shadow: 2px 3px 15px darkblue;
+    font-variant: small-caps;
+    text-align: center;
+    line-height: 10%;
+}
+
+#pi{
+    color: #444444;
+}
+
+#sadrzaj{
+    width:41%;
+    margin-left:10%;
+    margin-top:1em;
+    margin-bottom: 1em;
+    float: left;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#sadrzaj p{
+    color: black;
+}
+
+h3{
+    font-size: 1em;
+    color:black;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+#slika7{
+    width: 100%;
+    height: 70%;
+    float: left;
+}
+
+p{
+    color: white;
+    margin-left: 1em;
+    text-align: justify;
+    margin-right: 1em;
+    margin-top: 1px;
+    font-size: 1em;
+}
+
+#slika8{
+    float: left;
+    width: 100%;
+    height: 70%;
+    margin-top: 6px;
+}
+#slika9{
+    float: left;
+    width:100%;
+    height:70%;
+    margin-top: 6px;
+}
+
+.slika10{
+    clear: both;
+    width: 100%;
+    height: 40%;
+    margin-top: 1em;
+}
+
+.desno1 img{
+    clear: both;
+    width: 100%;
+    height: 40%;
+  }
+
+.footer{
+    height: 50px;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-top: 1%;
+    clear: both;
+    line-height: 20px;
+    text-align: center;
+    font-size: 0.8em;
+    color:black;
+}
+
+.desno{
+    float: left;
+    width: 18%;
+    margin-top: 1em;
+    margin-left: 1%;
+    background-color: rgba(0, 0, 224, 0.7);
+    position: relative;
+    border-radius: 10px;
+}
+
+.desno p{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.desno1{
+    float: left;
+    width: 18.5%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 10%;
+    position: relative;
+    border-radius: 10px;
+    margin-left: 1%;
+}
+.ceo{
+    width: 100%;
+    height: 100%;
+}
+.link{
+    text-decoration: none;
+    font-size: 1em;
+    color: darkorange;
+    margin-top:20px;
+    margin-left: 1em;
+    font-weight: bold;
+}
+.sum{
+    color: black;
+    font-size: 1em;
+    text-align: justify;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.sum1{
+    color: white;
+    font-size: 1em;
+    text-align: justify;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+#sadrzaj2{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 19.5%;
+    margin-left: 10%;
+    background-color: white;
+    float: left;
+}
+#sadrzaj22{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 19.5%;
+    background-color: white;
+    float: left;
+    margin-left: 1%;
+}
+#sadrzaj222{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 19.5%;
+    background-color: white;
+    float: left;
+    margin-left: 1%;
+}
+.smak{
+    width: 100%;
+    height: 70%;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+#tekst{
+    font-size: 1.5em;
+    color: white;
+    margin-left: 31%;
+    margin-top: 20px;
+}
+.sadrzaj3{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 60%;
+    margin-left: 10%;
+    background-color: white;
+    float: left;
+    border-radius: 5px;
+}
+.sadrzaj3 p{
+    color: #222222;
+}
+#i {
+    color: darkblue;
+    margin-left: 20%;
+    font-size: 0.7em;
+}
+#sadrzaj4{
+    margin-top: 3em;
+    margin-bottom: 3em;
+    width: 800px;
+    margin-left: 10%;
+    float: left;
+    border-style: inset;
+    border-color: orangered;
+}
+.dogadjaji{
+    width: 100%;
+    height: 80%;
+}
+#sadrzaj3 h4{
+    background-color: darkblue;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.footer1{
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+    background-color: rgba(0,0,0,0.9);
+    border: 1px solid darkorange;
+    clear: both;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+}
+.karte{
+    float: left;
+    margin-left: 10%;
+    width: 60%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#tur{
+    text-align: center;
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 1em;
+    color: darkorange;
+    text-shadow: 1px 2px 10px blue;
+}
+#uz{
+    background-color: darkorange;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+}
+table{
+    color: black;
+    font-weight: bold;
+    margin: 50px;
+    float: left;
+}
+
+.kontakt{
+    clear: both;
+    width: 80%;
+    background-color: rgba(0, 0, 224, 0.7);
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+.linkovi{
+    color:blue;
+    text-decoration: none;
+}
+#palma{
+    width: 15%;
+    height: 80%;
+    float: left;
+}
+.download{
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 224, 0.7);
+  border-radius: 5px;
+}
+.download a{
+    color:white;
+    text-decoration: none;
+    display: block; /*prikazuje element sa prelemom reda pre i posle tog elementa koji je element bloka */
+    padding: 15px 20px;
+    border-radius: 1.6em;
+    text-shadow: 1px 1px 10px black;
+    font-variant:small-caps;
+}
