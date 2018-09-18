@@ -29,11 +29,13 @@ h4 {
 p{
   color: #000;
   font-size: 18px;
-  padding: 15px;
+  padding: 10%;
   padding-top: 20px;
+  padding-bottom: 20px;
   font-weight: 100;
   font-family: serif;
   cursor: default;
+  text-align: justify;
 }
 .container {
 
@@ -124,10 +126,11 @@ p{
 }
 
 .sadrzaj .tekst img{
-  width: 100%;
-  margin-left: -28px;
-  padding-left: 0;
-  border-right: solid 1px #999;
+  width: 80%;
+  margin: 25px;
+  padding: 5px;
+  border-right: solid 5px #ff3f00;
+  border-radius: 50%;
 }
 @media (max-width:767px) {
   .sadrzaj .tekst img{
@@ -305,6 +308,12 @@ padding-bottom: 45px;
   margin: 15px;
 
 }
+
+.kontakt p{
+  text-align: center;
+}
+
+
 .footer {
     background-color: #ff3f00;
     color: #fff;
@@ -339,10 +348,16 @@ padding-bottom: 45px;
 }
 @media (max-width: 984px) {
   .top{
-    margin-top: 0;
+    margin-top: -10px;
     padding: 15px;
     border: solid 1px black;
   /*  border-right: solid 1px black;*/
   border-top: none;
+  }
+  .sadrzaj .tekst {
+    border-bottom: none;
+  }
+  .sadrzaj .kontakt {
+    border-bottom: none;
   }
 }
