@@ -295,6 +295,8 @@ padding-bottom: 45px;
   padding: 0;
   border: solid 1px #000;
   background-color: #fff;
+  border-bottom: none;
+  border-top: none;
 }
 .kontakt a{
   color: blue;
@@ -322,6 +324,7 @@ padding-bottom: 45px;
     border: solid 1px #000;
     opacity: 0.8;
     cursor: default;
+    margin-top: -5px;
 
 }
 
@@ -351,8 +354,8 @@ padding-bottom: 45px;
     margin-top: -10px;
     padding: 15px;
     border: solid 1px black;
-  /*  border-right: solid 1px black;*/
-  border-top: none;
+    border-top: none;
+    border-bottom: none;
   }
   .sadrzaj .tekst {
     border-bottom: none;
