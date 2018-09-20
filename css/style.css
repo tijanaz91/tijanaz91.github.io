@@ -48,6 +48,9 @@ p{
       padding-top: 65px;
       margin: 15px;
   }
+  p {
+    text-align: left;
+  }
 }
 @media (max-width:600px) {
 
