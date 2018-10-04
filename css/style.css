@@ -32,7 +32,7 @@ p{
   padding: 10%;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-weight: 100;
+  font-weight: normal;
   font-family: serif;
   cursor: default;
   text-align: justify;
@@ -83,7 +83,8 @@ p{
 }
 .sadrzaj .slika img{
   width: 100%;
-  height: 500px;
+  height: 550px;
+  object-fit: cover;
 }
 .sadrzaj .slika h4{
   text-align: center;
@@ -125,36 +126,33 @@ p{
     width: 90%;
     margin-left: 5%;
   }
-  .detalji p{
-    text-align: left;
-    padding: 20px;
-    padding-top: 15px;
-    padding-bottom: 0;
 
-  }
   }
 .cv-btn{
   width: 100px;
-  background-color: #ff3f00;
+  background-color: #ff0015;
   color: white;
   border-radius: 10px;
   margin-top: 15px;
 }
 .cv-btn:hover{
-  background-color: #ff5f00;
+  background-color: #7F262E;
   color: white;
 }
 
 .sadrzaj .tekst img{
-  width: 80%;
+  width: 90%;
   margin: 25px;
+  margin-left: 0;
   margin-top: 50px;
-  padding: 5px;
-  border-right: solid 5px #ff3f00;
-  border-radius: 50%;
+  padding: 7px;
+  border-right: solid 7px #ff0015;
+  border-radius: 42%;
+
 }
 @media (max-width:767px) {
   .sadrzaj .tekst img{
+    width: 70%;
     margin-left:0;
     margin-top: 25px;
   }
@@ -162,6 +160,7 @@ p{
     width: 100%;
     height: 450px;
   }
+
 }
 .sadrzaj .reference {
   width: 100%;
@@ -176,7 +175,7 @@ p{
   height: auto;
   padding: 5px;
   color: white;
-  background-color: #ff3f00;
+  background-color: #ff0015;
   font-size: 32px;
   cursor: default;
 }
@@ -203,7 +202,7 @@ border: solid 2px #999;
 border-radius: 5px;
 }
 .item:hover{
-  background-color: #ff3f00;
+  background-color: #ff0015;
   border: none;
 }
 .nav-tabs li a {
@@ -212,7 +211,7 @@ border-radius: 5px;
 .navbar {
     font-family: sans-serif;
     margin-bottom: 0;
-    background-color: #ff3f00;
+    background-color: #ff0015;
     font-size: 18px !important;
     padding: 20px;
     border: solid 1px #000;
@@ -306,13 +305,15 @@ padding-bottom: 45px;
     color: #fff !important;
 }
 .navbar-nav li a:hover {
-    color: #ff3f00 !important;
+    color: #ff0015 !important;
     background-color: white !important;
-    border-radius: 10px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .navbar-nav li.active a {
   color: white !important;
-  background-color: #ff3f00 !important;
+  background-color: #ff0015 !important;
 
 }
 .navbar-default .navbar-toggle {
@@ -330,11 +331,11 @@ padding-bottom: 45px;
   border-top: none;
 }
 .kontakt a{
-  color: blue;
+  color: #000;
   text-decoration: none;
 }
 .kontakt a:hover{
-  color: #ff3f00;
+  color: #ff0015;
   text-decoration: none;
 }
 .kontakt img{
@@ -348,7 +349,7 @@ padding-bottom: 45px;
 
 
 .footer {
-    background-color: #ff3f00;
+    background-color: #ff0015;
     color: #fff;
     padding: 25px;
     text-align: center;
@@ -376,18 +377,15 @@ padding-bottom: 45px;
   padding: 3px;
 }
 .top{
-  margin-top: -50px;
- padding-left: 90%;
-  padding-bottom: 15px;
+
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+    width: 50px;
+
 }
 @media (max-width: 984px) {
-  .top{
-    margin-top: -10px;
-    padding: 15px;
-    border: solid 1px black;
-    border-top: none;
-    border-bottom: none;
-  }
+
   .sadrzaj .tekst {
     border-bottom: none;
   }
@@ -406,5 +404,9 @@ padding-bottom: 45px;
   font-weight: bold;
 }
 .lng a:hover{
-  color: #555;
+  color: #7F262E;
+}
+#oMeni{
+  background-image: url(../images/image3.png);
+  background-size: cover;
 }
