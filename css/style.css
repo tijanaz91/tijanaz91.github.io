@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fff;
-    background-image: url(../images/background.jpg);
+/*    background-image: url(../images/background.jpg); */
     background-size: cover;
 
 }
@@ -168,7 +168,7 @@ p{
   padding: 0;
   border-left: solid 1px #000;
   border-right: solid 1px #000;
-  background-image: url(../images/background1.jpg);
+ /* background-image: url(../images/background1.jpg); */
   background-size: cover;
 }
 .naslov {
@@ -330,7 +330,7 @@ padding-bottom: 45px;
   background-color: #fff;
   border-bottom: none;
   border-top: none;
-  background-image: url(../images/background1.jpg);
+/*  background-image: url(../images/background1.jpg); */
   background-size: cover;
 }
 .kontakt a{
